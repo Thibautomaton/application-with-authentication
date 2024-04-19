@@ -1,0 +1,9 @@
+Dear {{user.username}}
+
+Welcome
+
+To confirm your account please click the link :
+
+{{url_for('auth.confirm', token=token, _external=True)}}
+
+Please note that we do not take reply to this mail

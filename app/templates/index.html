@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+
+
+{% block page_content %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{{wtf.quick_form(form)}}
+
+session say user is known :{{known}}
+
+{% endblock %}
